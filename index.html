@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="header"><Header></Header></div> -->
+    <div id="root">
+        <!-- <h1>namaste</h1> -->
+    </div>
+    <!-- <div id="footer"></div> -->
+     <div id="container">
+        <!-- <h1>Heading1</h1>
+        <h1>Heading2</h1> -->
+     </div>
+      
+
+
+<!-- ! async and defer difference -->
+
+<!-- ! in JS we do like this -->
+<!-- <script>
+   const heading =  document.createElement("h1");
+
+   heading.innerHTML = "namaste react"
+
+   const root = document.getElementById("root")
+
+   root.appendChild(heading);
+</script> -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</html>
+<script>
+    
+    const heading = React.createElement("h1" , {
+        id: "title"
+    } ,  "Namaste react") //! is an object of JS
+    // ! {id: "root" , given to to the react element}  => <div id="root">
+
+    const head1 = React.createElement("h1" , {id:"title"} , "heading1")
+
+    const head2 = React.createElement("h1" , {
+        id: "title"
+    } , "heading2")
+
+    const contain = React.createElement("div" , {
+        id:"container"
+    },[head1,head2])
+
+    //react element are objet 
+    
+    // const root = ReactDOM.createRoot(document.getElementById("root"))
+    // root.render(container)
+
+    const container = ReactDOM.createRoot(document.getElementById("container"))
+    container.render(contain)
+    
+    
+
+</script>
+<!-- ! crossorigin:  Ensures the browser handles the requests for these scripts securely when they are fetched from another domain (in this case, unpkg.com).
+ -->
+
+</body>

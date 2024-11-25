@@ -1,0 +1,22 @@
+{
+  "name": "yes",
+  "version": "1.0.0",
+  "description": "react course",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnujNegi10/react.git"
+  },
+  "author": "Anuj Negi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnujNegi10/react/issues"
+  },
+  "homepage": "https://github.com/AnujNegi10/react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.1"
+  }
+}
